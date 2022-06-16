@@ -1,10 +1,11 @@
+const array = document.querySelector('.array');
+const result = document.querySelector('.result');
+
 let sumInput = () => {
     let sum = 0;
     let inputs = [];
-    let array = document.querySelector('.array');
-    let result = document.querySelector('.result');
 
-    for (;;) {
+    while (true) {
         let value = +prompt("Введите число", '');
         if (!value) break;
         inputs.push(value);
